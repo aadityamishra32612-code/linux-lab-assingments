@@ -12,3 +12,5 @@ more.
     1 Go to the VirtualBox Website
 
     2 select your operating system
+### output :
+![Image](<Screenshot from 2025-09-05 10-52-12.png>)
