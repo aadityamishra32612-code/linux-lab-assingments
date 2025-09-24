@@ -76,27 +76,31 @@ more.
 
    Choose the downloaded Linux ISO file:
 
+
    – Click Start to launch your system
 #### output :
- https://github.com/aadityamishra32612-code/linux-lab-assingments/blob/d854ce2e588a0683c6942f6d3654ddb9fff7c530/Screenshot%20from%202025-09-24%2019-40-28.png
+ <img width="763" height="428" alt="image" src="https://github.com/user-attachments/assets/9f1fcf4f-7fc7-42dd-abed-43e0b442ac2c" />
+
 
 
   - choose your iso file from your computer
-![Image](img16-1.png)
+<img width="763" height="472" alt="image" src="https://github.com/user-attachments/assets/9f4fc765-fc39-45a8-a462-0ca030719722" />
+
 
 ### 5 Final installation
 
-    Install Linux
+    Install ubuntu
 
     – Click Install Linux Mint:
      testf
 #### output:
-![Image](img17.png)
+
 
 ### Make your Account:
 – Enter your details as shown below
 Like as : password, username, etc.
-![Image](img18.png)
+<img width="936" height="781" alt="image" src="https://github.com/user-attachments/assets/45b9589f-91f6-48d2-9737-83871fec5977" />
+
 # Finally We have successfully installed the UBUNTU LINUX .
 
 
