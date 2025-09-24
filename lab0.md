@@ -94,6 +94,7 @@ more.
     – Click Install Linux Mint:
      testf
 #### output:
+<img width="1915" height="1055" alt="image" src="https://github.com/user-attachments/assets/24644df1-7e96-4a5e-910c-f2cdfaf92df6" />
 
 
 ### Make your Account:
