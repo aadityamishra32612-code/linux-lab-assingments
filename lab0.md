@@ -78,7 +78,7 @@ more.
 
    – Click Start to launch your system
 #### output :
- 
+ https://github.com/aadityamishra32612-code/linux-lab-assingments/blob/d854ce2e588a0683c6942f6d3654ddb9fff7c530/Screenshot%20from%202025-09-24%2019-40-28.png
 
 
   - choose your iso file from your computer
