@@ -61,6 +61,7 @@ Creates an empty file.
 touch file.txt
 ```
 #### output:
+<img width="814" height="63" alt="image" src="https://github.com/user-attachments/assets/fea45610-c193-4c5e-ab66-8c772f2c79d5" />
 
 ## `cp`– Copy Files or Directories
 ```
@@ -77,7 +78,7 @@ rm file.txt          # Delete file
 rm -r folder_name    # Delete folder (recursively)
 ```
 ## ⚠️ Be careful! There is no undo.
-![Image](<Screenshot from 2025-09-07 17-01-42.png>)
+
 
 # ✅ 3. File Viewing & Editing
 
