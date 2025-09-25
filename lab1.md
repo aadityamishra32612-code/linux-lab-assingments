@@ -89,7 +89,8 @@ rm -r folder_name    # Delete folder (recursively)
 cat file.txt
 ```
 #### Output: 
-![Image](<Screenshot from 2025-09-07 17-04-19.png>)
+<img width="708" height="46" alt="image" src="https://github.com/user-attachments/assets/d1c62d56-ace7-4b21-ab34-e027e50a1706" />
+
 
 ## `nano` – Edit Files in Terminal
 A basic terminal-based text editor.
