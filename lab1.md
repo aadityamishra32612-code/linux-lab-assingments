@@ -41,6 +41,7 @@
       cd ..               # Go up one level
       cd /                # Go to root
       cd ~                # Go to home directory
+<img width="796" height="172" alt="image" src="https://github.com/user-attachments/assets/b6955139-936d-4e9c-a3a0-4d0770e67f9b" />
 
 
 # ✅ 2. File and Directory Management
@@ -51,7 +52,7 @@
 mkdir new_folder
 ```
 #### output :
-![Image](<Screenshot from 2025-09-07 16-54-00.png>)
+
 
 ## `touch`– Create File
 Creates an empty file.
