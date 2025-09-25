@@ -78,6 +78,7 @@ rm file.txt          # Delete file
 rm -r folder_name    # Delete folder (recursively)
 ```
 ## ⚠️ Be careful! There is no undo.
+<img width="810" height="65" alt="image" src="https://github.com/user-attachments/assets/bff2f05b-4816-4ac2-bf41-59dc43033471" />
 
 
 # ✅ 3. File Viewing & Editing
