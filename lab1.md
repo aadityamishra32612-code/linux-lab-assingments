@@ -102,7 +102,8 @@ nano file.txt
     CTRL + X to exit
 
 #### output :
-![Image](<Screenshot from 2025-09-07 17-06-58.png>)
+<img width="704" height="31" alt="image" src="https://github.com/user-attachments/assets/1631f9e4-7357-4dfc-a5c0-b5bc3f61d203" />
+
 
 ## `clear` – Clears the Terminal
 ```
@@ -122,14 +123,16 @@ echo "Hello, World!"
 
 ---
 #### output : 
-![Image](<Screenshot from 2025-09-07 17-08-17.png>)
+<img width="711" height="49" alt="image" src="https://github.com/user-attachments/assets/64406f5e-36d0-4f81-9cf2-f9b0802d4751" />
+
 ### `whoami` – Show Current User
 
 ```bash
 whoami
 ```
 ### output :
-![Image](<Screenshot from 2025-09-07 17-10-21.png>)
+<img width="711" height="49" alt="image" src="https://github.com/user-attachments/assets/cc922ab5-0de1-4090-847e-31fd5ac7f23f" />
+
 ---
 
 ### `man` – Manual for Any Command
@@ -153,15 +156,17 @@ find . -name "*.txt"
 🔍 Finds all `.txt` files in current folder and subfolders.
 
 #### output :
-![Image](<Screenshot from 2025-09-07 17-17-52.png>)
+<img width="711" height="46" alt="image" src="https://github.com/user-attachments/assets/1eacfeba-5e53-4e6e-ba09-b02d1c598407" />
+
 ---
 
 ### `grep` – Search Inside Files
 
 ```bash
-grep "hello" file.txt
+grep "grep hello i mam aditya" file.txt
 ```
-![Image](<Screenshot from 2025-09-07 17-19-36.png>)
+<img width="711" height="46" alt="image" src="https://github.com/user-attachments/assets/d30efdda-6d93-45c4-a8ce-1ef5b95c1de4" />
+
 
 🔍 Searches for the word `hello` inside `file.txt`.
 
@@ -224,7 +229,8 @@ Breakdown:
 * `r--` → Others have read only
 
 ### output : 
-![Image](<Screenshot from 2025-09-07 21-58-11.png>)
+<img width="733" height="139" alt="image" src="https://github.com/user-attachments/assets/df876325-5e76-4e73-be07-c49d89fea13d" />
+
 ---
 ## 🔹 2. `chmod` – Change File Permissions
 
@@ -264,13 +270,7 @@ Meaning:
 
 * Owner: 7 → `rwx`
 * Group: 7 → `r-w-x`
-* Others: 7 → `r-w-x`
-
-### **image**
-![Image](<Screenshot from 2025-09-07 22-16-26.png>)
-![Image](<Screenshot from 2025-09-07 22-16-41.png>)
-![Image](<Screenshot from 2025-09-07 22-18-25.png>)
-![Image](<Screenshot from 2025-09-07 22-17-40.png>)
+* Others: 7 → `r-w-r`
 
 ### (B) Symbolic Method  
 
@@ -284,7 +284,8 @@ Operators:
 
 Modes can be set in **numeric (octal)** or **symbolic** form.
 #### output:
-![Image](<Screenshot from 2025-09-07 22-27-48.png>)
+<img width="613" height="156" alt="image" src="https://github.com/user-attachments/assets/d3519565-d839-4059-be33-90e5e3aad4dd" />
+
 ---
 ### (C) Recursive Changes
 
@@ -294,9 +295,9 @@ chmod -R 755 /mydir
 
 * `-R` → applies changes recursively to all files/subdirectories.
 
-![Image](<Screenshot from 2025-09-07 22-29-45.png>)
-![Image](<Screenshot from 2025-09-07 22-40-48.png>)
-![Image](<Screenshot from 2025-09-07 22-43-33.png>)
+<img width="1761" height="786" alt="image" src="https://github.com/user-attachments/assets/215de977-9479-49b3-9740-99ec709e6ba8" />
+<img width="1818" height="919" alt="image" src="https://github.com/user-attachments/assets/2e23eb9b-4b10-4538-b328-fd291e13e6db" />
+
 ---
 
 ## 🔹 3. `chown` – Change File Ownership
@@ -387,7 +388,8 @@ ls -l testfile.txt
 ---
 
 ✅ **Key Tip**: Use **numeric for quick settings** (e.g., 755, 644) and **symbolic for fine adjustments** (`u+x`, `g-w`).
-![Image](<Screenshot from 2025-09-07 22-57-43.png>)
+<img width="815" height="251" alt="image" src="https://github.com/user-attachments/assets/133c28cd-8a67-4cda-b430-f3490f3492ee" />
+
 
 ---
 
