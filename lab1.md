@@ -52,6 +52,7 @@
 mkdir new_folder
 ```
 #### output :
+<img width="819" height="179" alt="image" src="https://github.com/user-attachments/assets/cb9e7d74-09cb-442a-9d23-5380508bd076" />
 
 
 ## `touch`– Create File
@@ -60,7 +61,7 @@ Creates an empty file.
 touch file.txt
 ```
 #### output:
-![Image](<Screenshot from 2025-09-07 16-56-46.png>)
+
 ## `cp`– Copy Files or Directories
 ```
 cp source.txt destination.txt
