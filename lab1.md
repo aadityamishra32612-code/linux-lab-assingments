@@ -10,6 +10,7 @@
    ```
    ### 📌 Output example:
  /home/aditya/Assignment 
+<img width="1826" height="108" alt="image" src="https://github.com/user-attachments/assets/c6d443a9-f467-4e0c-9afe-c6d7917cc3d4" />
 
 
 
@@ -40,7 +41,7 @@
       cd ..               # Go up one level
       cd /                # Go to root
       cd ~                # Go to home directory
-![Image](<Screenshot from 2025-09-07 16-42-23.png>)
+
 
 # ✅ 2. File and Directory Management
 
