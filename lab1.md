@@ -9,7 +9,8 @@
    pwd
    ```
    ### 📌 Output example:
- /home/ashishkumar/Assignment 
+ /home/aditya/Assignment 
+
 
 
 
@@ -23,8 +24,8 @@
     ls -la → Combined
 ```
 #### output is :
-![Image](<Screenshot from 2025-09-07 16-37-34.png>)
-![Image](<Screenshot from 2025-09-07 16-38-58.png>)
+<img width="1911" height="984" alt="image" src="https://github.com/user-attachments/assets/cbc8572a-19c2-417a-bc71-f163b6650c5d" />
+
 
 ## `cd` – Change Directory
    Moves into a directory.
