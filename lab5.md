@@ -1,4 +1,5 @@
 # 🔧 1. starter_kit.sh – Script to Set Up Project Structure
+<img width="800" height="345" alt="image" src="https://github.com/user-attachments/assets/2ed40c40-9bb3-415e-81bc-2860b83237f9" />
 
 
 ."#!/bin/bash → Shebang line. It tells the system to use bash to execute this script.
@@ -30,11 +31,13 @@ the project/ folder).
 
 
 ## 🔧 output
-![Image](<Screenshot from 2025-09-09 20-23-51.png>)
+<img width="800" height="87" alt="image" src="https://github.com/user-attachments/assets/2819d83a-d3bb-4f6c-abba-9c36a570a985" />
+
 
 ## 🔧 Check the folder structure:
 
-![Image](<Screenshot from 2025-09-09 20-28-26.png>)
+<img width="778" height="239" alt="image" src="https://github.com/user-attachments/assets/884369e3-89c5-49c5-a7a0-cc460bfce421" />
+
 
 # 🔧 LAB Extra – Starter Kit & Automation
 
