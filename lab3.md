@@ -4,10 +4,10 @@
 
 ```
 #!/bin/bash        ---shebang
-a="Ashish Choudhary"           ---taking vansh in the variable a
+a="Aditya Mishra"           ---taking vansh in the variable a
 b=40                 ---taking 40 in the variable b
 
-if [ $a="Ashish Choudhary" ] && [ $b -gt 18 ]; then      ---checking conditions and using an opreator and(&&)
+if [ $a="Aditya Mishra" ] && [ $b -gt 18 ]; then      ---checking conditions and using an opreator and(&&)
     echo " you are adult "                     ---printing you are adult
 fi
 
