@@ -1,3 +1,5 @@
+<img width="851" height="315" alt="Data Analytics" src="https://github.com/user-attachments/assets/850997ac-cea6-4224-8732-e5d1fcb3c6b9" />
+
 #  STUDENT DETAILS
 ### ADITYA MISHRA
 ### SAP ID - 590029219
