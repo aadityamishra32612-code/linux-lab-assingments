@@ -3,4 +3,4 @@ ADITYA MISHRA
 # SAP ID - 590029219
 # BATCH 78
 ### EXPERIMENTS
-###1: lab0.md
+https://github.com/aadityamishra32612-code/linux-lab-assingments/blob/main/lab0.md
