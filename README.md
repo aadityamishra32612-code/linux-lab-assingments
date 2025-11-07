@@ -21,3 +21,5 @@
 [Experiment:7](https://github.com/aadityamishra32612-code/linux-lab-assingments/blob/main/Lab6.md)
 
 [Experiment:8](https://github.com/aadityamishra32612-code/linux-lab-assingments/blob/main/Lab7.md)
+
+[Experiment:9](https://github.com/aadityamishra32612-code/linux-lab-assingments/blob/main/Lab8.md)
