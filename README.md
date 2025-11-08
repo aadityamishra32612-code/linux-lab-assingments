@@ -23,3 +23,5 @@
 [Experiment:8](https://github.com/aadityamishra32612-code/linux-lab-assingments/blob/main/Lab7.md)
 
 [Experiment:9](https://github.com/aadityamishra32612-code/linux-lab-assingments/blob/main/Lab8.md)
+
+[MID-SEM PROJECT](https://github.com/aadityamishra32612-code/linux-lab-assingments/blob/main/MidSem_project.md)
