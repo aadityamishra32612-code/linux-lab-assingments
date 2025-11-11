@@ -107,18 +107,10 @@ Command(s):
 crontab -e
 0 8 * * * /home/tanmay/desktop/linux/exp3/midsem.sh
 ```
+**Output**:
 
-Output:
+<img width="1189" height="853" alt="Screenshot 2025-11-11 164517" src="https://github.com/user-attachments/assets/55435336-bc3d-444d-87ee-c32af444bf04" />
 
-<p align="center">
-<img src="img/out2.png" width="900">
-</p>
-
-**Final Output**:
-
-<p align="center">
-<img src="img/out3.png" width="900">
-</p>
 
 
 
