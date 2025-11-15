@@ -82,8 +82,8 @@ fi
 
 
 if [ -f "$LOG_FILE" ]; then
-    mail -s "Daily System Log - $(date +%Y-%m-%d)" tanmay@localhost < "$LOG_FILE"
-    echo "Log emailed to local mailbox: tanmay@localhost"
+    mail -s "Daily System Log - $(date +%Y-%m-%d)" aditya@localhost < "$LOG_FILE"
+    echo "Log emailed to local mailbox: aditya@localhost"
 else
     echo "No log file found for today!"
 fi
