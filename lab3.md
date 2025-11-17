@@ -1,59 +1,105 @@
-# modifying script
+## Experiment [4]: [Bash Scripting]
+### Name:Aditya Mishra, Roll No.: 590029219, Date: 2025-09-04
+### AIM: 
+* [To Learn Basics of Bash Scripting.]
 
-## original script
+### Requirements:
+* [Any Linux Distro, any kind of text editor (vs code, vim, notepad, nano, etc)]
+
+### Theory: 
+* [Learning the basics of bash scripting.]
+
+## Procedure & Observations
+
+## Exercise 1: [Hello World Script]
+
+## Task Statement: 
+* [Basic Usage of Shell Scripts]
+
+## Explanation: 
+* [Writing Begginer level Shell Scripts]
+
+## Command(s):
+```
+#!/bin/bash
+echo "Hello, World!"
 
 ```
-#!/bin/bash        ---shebang
-a="Aditya Mishra"           ---taking vansh in the variable a
-b=40                 ---taking 40 in the variable b
+### Output:
+#<img width="949" height="693" alt="Screenshot 2025-11-17 122448" src="https://github.com/user-attachments/assets/cb83b747-71fa-4f14-9fd0-c57758e4926b" />
 
-if [ $a="Aditya Mishra" ] && [ $b -gt 18 ]; then      ---checking conditions and using an opreator and(&&)
-    echo " you are adult "                     ---printing you are adult
-fi
 
-if [ $a=" akshat" ] && [ $b -lt 18 ]; then       ---checking conditions and using an opreator and(&&)
-    echo "you are minor"                         --- printing you are minor
-fi
+## Exercise 2: [Personalized Greeting Script]
+
+## Task Statement: 
+* [Basic Shell Script to callout user defined function.]
+
+## Explanation: 
+* [This Shell script will take input from user and store it in a variable and then call the variable which will output the stored value.]
+
+## Command(s):
+```
+#!/bin/bash
+echo "What is your name?"
+read name
+echo "Hello, $name! Welcome to Shell Scripting."
+
+``` 
+
+## Output:
+
+<img width="959" height="691" alt="Screenshot 2025-11-17 122625" src="https://github.com/user-attachments/assets/f0876db1-fc03-42f1-af32-84687de41127" />
+
+## Exercise 3: [Arithmetic Operations in Shell Scripting]
+
+## Task Statement:
+* [Using Basic Arithmetic Operations in Shell Scripts]
+
+## Command(s):
+```
+
+#!/bin/bash
+echo "Enter first number: "
+read num1
+echo "Enter second number: "
+read num2
+
+echo "Addition: $((num1 + num2))"
+echo "Subtraction: $((num1 - num2))"
+echo "Multiplication: $((num1 * num2))"
+echo "Division: $((num1 / num2))"
 
 ```
-<img width="805" height="504" alt="image" src="https://github.com/user-attachments/assets/eaaa23d8-7f8f-455f-9f6d-11d756287003" />
 
-<img width="728" height="84" alt="image" src="https://github.com/user-attachments/assets/99c7e4ee-0d4c-480a-876a-b409e36460bd" />
+## Output:
 
+<img width="955" height="916" alt="Screenshot 2025-11-17 122726" src="https://github.com/user-attachments/assets/91b68b4e-9cbd-42c8-ab46-4a64c46dad11" />
 
-##  modified script
+## Exercise 4:
+* [Voting Eligibility]
 
+## Task Statement:
+* [Using Conditionals in Shell script ]
+
+## Command(s):
 ```
-#!/bin/bash 
-# prompt user for input
-
-read -p "enter your name: " name      --- taking name from the user
-read -p "enter your age: " age        --- taking age from the user
-
-if [ $name="Ashish Choudhary" ] && [ $age -gt 18 ]; then    --- checking conditions with if and opreator and(&&)     
-    echo " you are adult "                     --- printing (you are adult)
-fi
-
-if [ $name=" akshat" ] && [ $age -lt 18 ]; then  ----  checking conditions with if and opreator and(&&)      
-    echo "you are minor"                         ---- printing (you are minor)
-fi
-```
-## the difference between the original and modified script is that in the first one we check for fixed value and in the next case we check for all cases .
-
-<img width="745" height="292" alt="image" src="https://github.com/user-attachments/assets/5f793cb2-caf2-42df-90b0-805f81e74011" />
-
-
-## checking with differnt examples
-#### output is :
-<img width="727" height="230" alt="image" src="https://github.com/user-attachments/assets/57dbbd1a-c351-4362-a995-be985a3b71cb" />
-
-
-### Q1=differnce between $1,$@ and $# in bash?
-
-Ans-- 0 $1= this refers to positional parameters
-         $@= represents all arguments passed to the script
-         $#= returns the number of arguments passed
-
-### Q2=what does exit 1 mean in the script
+#!/bin/bash
+echo "What is your age?"
+read age
+if [ $age -ge 18 ]; then
     
-Ans-- general error (something went wrong) Or exit with error.
+    echo "You are eligible to vote!"
+    
+else 
+    echo "You are not eligible to vote!"
+
+fi
+
+```
+
+## Output:
+
+<img width="956" height="812" alt="Screenshot 2025-11-17 123052" src="https://github.com/user-attachments/assets/dde245f5-2be8-4f50-ad1b-07d6698c4004" />
+
+## Result
+* The Exercises were successfully completed for Basic Shell Scripting
