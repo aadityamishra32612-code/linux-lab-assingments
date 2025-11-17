@@ -1,14 +1,14 @@
-# 📌 We will be walking thourgh basic linux terminal commands
+#  We will be walking thourgh basic linux terminal commands
 
 
-# ✅ 1. Navigation Commands
+#  1. Navigation Commands
 
 ## `pwd`– Print Working Directory
    Shows the current location in the filesystem.
    ```
    pwd
    ```
-   ### 📌 Output example:
+   ###  Output example:
  /home/aditya/Assignment 
 <img width="1826" height="108" alt="image" src="https://github.com/user-attachments/assets/c6d443a9-f467-4e0c-9afe-c6d7917cc3d4" />
 
@@ -44,7 +44,7 @@
 <img width="796" height="172" alt="image" src="https://github.com/user-attachments/assets/b6955139-936d-4e9c-a3a0-4d0770e67f9b" />
 
 
-# ✅ 2. File and Directory Management
+# 2. File and Directory Management
 
 ## `mkdir` – Make Directory
  Creates a new folder.
@@ -77,11 +77,11 @@ mv oldname.txt newname.txt
 rm file.txt          # Delete file
 rm -r folder_name    # Delete folder (recursively)
 ```
-## ⚠️ Be careful! There is no undo.
+##  Be careful! There is no undo.
 <img width="810" height="65" alt="image" src="https://github.com/user-attachments/assets/bff2f05b-4816-4ac2-bf41-59dc43033471" />
 
 
-# ✅ 3. File Viewing & Editing
+#  3. File Viewing & Editing
 
 ## `cat`– View File Contents
    Displays content in terminal.
@@ -111,7 +111,7 @@ clear
 ```
 Shortcut: CTRL + L
 
-## ✅ 4. **System Commands**
+## 4. **System Commands**
 
 ### `echo` – Print Text
 
@@ -145,7 +145,7 @@ Use `q` to quit the manual.
 
 ---
 
-## ✅ 5. **Searching and Finding**
+##  5. **Searching and Finding**
 
 ### `find` – Locate Files
 
@@ -172,7 +172,7 @@ grep "grep hello i mam aditya" file.txt
 
 ---
 
-## ✅ 6. **Helpful Shortcuts**
+##  6. **Helpful Shortcuts**
 
 | Shortcut   | Action                      |
 | ---------- | --------------------------- |
@@ -183,7 +183,7 @@ grep "grep hello i mam aditya" file.txt
 
 ---
 
-## ✅ 7. **Bonus: Chaining Commands**
+##  7. **Bonus: Chaining Commands**
 
 * **Run multiple commands**:
 
@@ -196,7 +196,7 @@ mkdir test && cd test && touch hello.txt
 
 ---
 
- # 🐚 Shell Tutorial – File Permissions with `chmod` and `chown`
+ #  Shell Tutorial – File Permissions with `chmod` and `chown`
 ---
 
 
@@ -432,7 +432,7 @@ chown root:admin project.sh # Change owner to root and group to admin
 | 7       | rwx        | Full access  |
 
 ---
-### 📌 Q1 what is the difference between chmod and chown?
+###  Q1 what is the difference between chmod and chown?
     ANS=chown-change ownership
          change the owner and group of a file or directory
         
