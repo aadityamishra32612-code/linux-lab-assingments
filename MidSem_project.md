@@ -8,7 +8,7 @@
 
 ### Requirements:
 
-* Any Linux Distro (Pop!_OS)
+* Any Linux Distro (UBUNTU)
 * Any text editor (VS Code, Vim, Nano, etc.)
 * Cron service for scheduling
 * Postfix/mailutils for local email
@@ -105,7 +105,7 @@ Command(s):
 
 ```bash
 crontab -e
-0 8 * * * /home/tanmay/desktop/linux/exp3/midsem.sh
+0 8 * * * /home/aditya/desktop/linux/exp3/midsem.sh
 ```
 **Output**:
 
