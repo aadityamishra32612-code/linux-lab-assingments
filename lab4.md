@@ -1,96 +1,117 @@
-# 📌 BACKUP
 
+## Experiment [5]: [Shell Programming]
 
+### Name: Aditya Mishra  Roll.: 590029219 Date: 2025-10-05
 
-# ✅1.⁠ ⁠backup.sh Script
-Create a new file named backup.sh inside your project folder:
-<img width="739" height="321" alt="image" src="https://github.com/user-attachments/assets/e30007ad-f938-434a-9f47-a995f4491998" />
+### AIM:
+* [To Learn Basic Conditional Statements in Bash Scripting]
 
+### Requirements:
+* [Any Linux Distro, any kind of text editor (vs code, vim, notepad, nano, etc)]
 
+### Theory:
+* [Basic usage of conditions and arrays in bash scripting.]
 
-# ✅ 2. Make Script Executable
-Run the following command once:
+## Procedure & Observations
 
-chmod 777 backup.sh
+## Exercise 1: [Prime Number Check]
 
-# ✅ 3. Testing the script
-## 1. Create some samples .txt files:
-<img width="750" height="49" alt="image" src="https://github.com/user-attachments/assets/99637ecb-8c87-4c17-a3e0-cc0bbb2a9b84" />
+## Task Statement:
+* [To check if the number given by the user is a prime number or not.]
 
-## 2. Run the script:
+## Explanation:
+* [using if else loop wap to check if the number is a prime number or not.]
 
-./backup.sh
-<img width="753" height="82" alt="image" src="https://github.com/user-attachments/assets/13a716e7-e908-43d9-9194-dc2835c71ceb" />
+## Command(s):
+```
+#!/bin/bash
+echo "Enter a number: "
+read num
+flag=0
 
-## 3. Check the backup/folder:
+for ((i=2; i<num; i++))
+do
+    if [ $((num % i)) -eq 0 ]
+    then
+        flag=1
+        break
+    fi
+done
 
-ls backup/
-<img width="754" height="63" alt="image" src="https://github.com/user-attachments/assets/794935ec-060e-4116-a2e0-0c2652b80b13" />
+if [ $flag -eq 0 ]
+then
+    echo "$num is a prime number."
+else
+    echo "$num is not a prime number."
+fi
+```
 
+### Output:
+<img width="950" height="598" alt="Screenshot from 2025-11-18 10-22-36" src="https://github.com/user-attachments/assets/5750571d-1140-4778-a22b-f88b14070bba" />
 
-# 🔧 LAB4– File & Backup Automation
+## Exercise 2: [Sum of Digits]
 
-## Objective
-Automate the backup of ⁠ .txt ⁠ files into a ⁠ backup/ ⁠ folder with timestamps in filenames.
+## Task Statement:
+* [Take input from user and give the sum of two digits.]
 
----
+## Explanation:
+* [This script will take input from user and will give the following output.]
 
-## 🔧 Script Explanation
+## Command(s):
+```
+#!/bin/bash
+echo "Enter a number: "
+read num
+sum=0
 
-1.⁠ ⁠⁠ mkdir -p backup ⁠  
-   Creates a folder n".
+while [ $num -gt 0 ]
+do
+    digit=$((num % 10))
+    sum=$((sum + digit))
+    num=$((num / 10))
+done
 
-🔹 3. Using at (One-time Scheduling)
-Run a script once at a specific time:
+echo "Sum of digits: $sum"
+```
 
-echo "/home/user/backup.sh" "
-amed ⁠ backup ⁠ if it does not exist.
+### Output:
 
-2.⁠ ⁠⁠ timestamp=$(date +"%Y%m%d_%H%M%S") ⁠  
-   Generates a timestamp (format: YYYYMMDD_HHMMSS).
+<img width="950" height="352" alt="Screenshot from 2025-11-18 10-25-17" src="https://github.com/user-attachments/assets/3796b655-99a6-4223-a8a9-9bcbabe3300a" />
 
-3.⁠ ⁠⁠ for file in *.txt; do ... done ⁠  
-   Loops through all ⁠ .txt ⁠ files in the current directory.
+## Exercise 3: [Armstrong Numbers]
 
-4.⁠ ⁠⁠ basename "$file" .txt ⁠  
-   Extracts the file name without extension.
+## Task Statement:
+* [Take input user and give the sum of Armstrong number of n digits is a number equal to the sum of its digits raised to the power n. Example: 153 = 1^3^ + 5^3^ + 3^3^ ]
 
-5.⁠ ⁠⁠ cp "$file" "backup/${filename}_$timestamp.txt" ⁠  
-   Copies the file into ⁠ backup/ ⁠ with the timestamp appended.
+## Explanation:
+* [This script will tell if the number entered by the user is an armstrong number or not.]
 
----
+## Command(s):
+```
+#!/bin/bash
+echo "Enter a number: "
+read num
+temp=$num
+n=${#num}   # number of digits
+sum=0
 
-## 🔧 Example Run
+while [ $temp -gt 0 ]
+do
+    digit=$((temp % 10))
+    sum=$((sum + digit**n))
+    temp=$((temp / 10))
+done
 
-### Input
-Created two ⁠ .txt ⁠ files:
+if [ $sum -eq $num ]
+then
+    echo "$num is an Armstrong number."
+else
+    echo "$num is not an Armstrong number."
+fi
+```
 
-file1.txt
-world.txt
+### Output:
+<img width="950" height="275" alt="Screenshot from 2025-11-18 10-27-30" src="https://github.com/user-attachments/assets/f24f9205-3281-4b37-8c97-ad00be486219" />
 
-
-### Command
-./backup.sh
-
-
-### Output
-Files copied into ⁠ backup/ ⁠ with timestamps:
-
-<img width="753" height="82" alt="image" src="https://github.com/user-attachments/assets/fcf7c6d6-b4b2-4dc7-a577-79cbd63f2be8" />
-
-### 🛠️ Q1-What is the difference between cp,mv,and rsync?
-
-     ans=cp-Copies files or directories
-         rm-Moves or renames files or directories
-         rsync-Synchronizes files/directories efficiently
-
-
-### ✅ Q2-How can you schedule scripts to run automatically?
-     
-     ans=You can schedule scripts to run automatically using task schedulers built into your operating system.
-
-
-
-### ✅ Q2-How can you schedule scripts to run automatically?
-     
-     ans=You can schedule scripts to run automatically using task schedulers built into your operating system.
+## Result:
+* The Exercises were successfully completed for Basic Shell Scripting.
