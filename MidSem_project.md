@@ -8,7 +8,7 @@
 
 ### Requirements:
 
-* Any Linux Distro (UBUNTU)
+* Any Linux Distro (Ubuntu)
 * Any text editor (VS Code, Vim, Nano, etc.)
 * Cron service for scheduling
 * Postfix/mailutils for local email
