@@ -142,8 +142,11 @@ Now run:
 
 You will see output like:
 
-Number of .sh files in /home/user: 5
+Number of .sh files in /home/user: 1
 ```
+### Outout:
+![alt text](<Screenshot from 2025-11-20 23-27-31.png>)
+
 ### Q3:Write a script to monitor CPU usage every 10 seconds and log to file
 #### 1.Save the script
 
