@@ -202,6 +202,7 @@ If you used a custom path:
 
 Create a systemd unit file /etc/systemd/system/monitor_cpu.service:
 ```
+
 [Unit]
 Description=CPU monitor (every 10s)
 
@@ -238,8 +239,9 @@ If systemd service:
 ```
 sudo systemctl stop monitor_cpu.service
 ```
-### Script:
 ```
+### Script:
+
 #!/bin/bash
 
 LOGFILE="/var/log/cpu_usage.log"
@@ -254,16 +256,18 @@ while true
 do
     timestamp=$(date +"%Y-%m-%d %H:%M:%S")
 
-    cpu_usage=$(top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8 "%"}')
+cpu_usage=$(top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8 "%"}')
 
-    echo "$timestamp - CPU Usage: $cpu_usage" >> "$LOGFILE"
+echo "$timestamp - CPU Usage: $cpu_usage" >> "$LOGFILE"
+ sleep 10
 
-    sleep 10
 done
+```
 ```
 ### Output:
 ![alt text](<Screenshot from 2025-11-21 00-55-05.png>)
-
+```
+```
 ### Q4: Create a script that adds a new user and sets default permissions for their home directory.
 #### Step 1: Decide the username
 
@@ -290,6 +294,7 @@ Create a file called add_user.sh:
 
 Paste this complete script:
 ```
+````
 #!/bin/bash
 
 Script to add a user and set permissions on their home directory
@@ -318,7 +323,7 @@ echo "User $USERNAME created."
 echo "Home directory permissions set to $PERMISSIONS."
 echo "Location: $HOMEDIR"
 ````
-
+````
 #### Step 5: Save and exit
 
 Press:
@@ -350,7 +355,8 @@ You'll be prompted to enter a password.
 ```drwx------ 3 newuser newuser 4096 Nov 21 22:30 /home/newuser```
 
 ### Script:
- ````!/bin/bash
+ ````
+!/bin/bash
 
 if [ "$(id -u)" -ne 0 ]; then
     echo "Error: This script must be run as root."
@@ -385,6 +391,7 @@ echo "User '$USERNAME' created successfully."
 echo "Home directory: /home/$USERNAME"
 echo "Permissions set to 700 (rwx------)
 ````
+
 ### Output:
 ![alt text](<Screenshot from 2025-11-21 01-18-32.png>)
 **********************************************************************
