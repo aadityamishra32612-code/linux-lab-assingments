@@ -144,3 +144,244 @@ You will see output like:
 
 Number of .sh files in /home/user: 5
 ```
+### Q3:Write a script to monitor CPU usage every 10 seconds and log to file
+#### 1.Save the script
+
+Create a file:
+
+```sudo mkdir -p /usr/local/bin
+sudo tee /usr/local/bin/monitor_cpu.sh > /dev/null <<'EOF'
+(paste the script contents here)
+EOF
+```
+
+Or save it to your home folder as ```monitor_cpu.sh```.
+
+#### 2.Make it executable
+
+```chmod +x /usr/local/bin/monitor_cpu.sh```
+
+
+#### 3.Run it
+Run in foreground (useful to see output while debugging):
+
+```/usr/local/bin/monitor_cpu.sh```
+
+
+Run in background:
+
+```/usr/local/bin/monitor_cpu.sh &```
+
+
+Run with an alternate log file (no sudo required if you write to a writable path):
+
+```LOGFILE="$HOME/cpu.log" /usr/local/bin/monitor_cpu.sh &```
+
+
+#### 4:View the log
+
+Tail live:
+
+```tail -f /var/log/cpu_monitor.log```
+
+
+Show last 50 lines:
+
+```tail -n 50 /var/log/cpu_monitor.log```
+
+
+If you used a custom path:
+
+```tail -f ~/cpu.log```
+
+
+#### 5.Run as a service (recommended for long-running monitoring)
+
+Create a systemd unit file /etc/systemd/system/monitor_cpu.service:
+```
+[Unit]
+Description=CPU monitor (every 10s)
+
+[Service]
+ExecStart=/usr/local/bin/monitor_cpu.sh
+Restart=always
+User=root
+# Or set User=someuser and ensure LOGFILE is writable by that user
+
+[Install]
+WantedBy=multi-user.target
+```
+Reload and enable:
+```
+sudo systemctl daemon-reload
+sudo systemctl enable --now monitor_cpu.service
+````
+
+Check status and logs:
+```
+sudo systemctl status monitor_cpu.service
+sudo journalctl -u monitor_cpu.service -f
+```
+Stop the script
+```
+If background process: find PID and kill:
+```
+pgrep -f monitor_cpu.sh
+kill <PID>
+```
+
+If systemd service:
+
+```
+sudo systemctl stop monitor_cpu.service
+```
+### Script:
+```
+#!/bin/bash
+
+LOGFILE="/var/log/cpu_usage.log"
+
+touch "$LOGFILE"
+
+echo "Starting CPU usage monitoring..."
+echo "Logging CPU usage to $LOGFILE"
+echo "Press Ctrl+C to stop."
+
+while true
+do
+    timestamp=$(date +"%Y-%m-%d %H:%M:%S")
+
+    cpu_usage=$(top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8 "%"}')
+
+    echo "$timestamp - CPU Usage: $cpu_usage" >> "$LOGFILE"
+
+    sleep 10
+done
+```
+### Output:
+![alt text](<Screenshot from 2025-11-21 00-55-05.png>)
+
+### Q4: Create a script that adds a new user and sets default permissions for their home directory.
+#### Step 1: Decide the username
+
+Pick the username you want to create, e.g.:
+
+```newuser```
+
+#### Step 2: Open terminal with sudo/root access
+
+Run:
+
+```sudo -i```
+
+
+(or prefix commands with sudo)
+
+#### Step 3: Create the script file
+
+Create a file called add_user.sh:
+
+```sudo nano add_user.sh```
+
+#### Step 4: Paste the script below
+
+Paste this complete script:
+```
+#!/bin/bash
+
+Script to add a user and set permissions on their home directory
+
+if [ -z "$1" ]; then
+    echo "Usage: $0 <username>"
+    exit 1
+fi
+
+USERNAME="$1"
+HOMEDIR="/home/$USERNAME"
+PERMISSIONS="700"   # Change to 755 if you want more open access
+
+ 1. Create the user (home directory auto-created)
+useradd -m "$USERNAME"
+
+ 2. Set password (interactive)
+echo "Set password for user $USERNAME:"
+passwd "$USERNAME"
+
+ 3. Set default permissions for the home directory
+chmod "$PERMISSIONS" "$HOMEDIR"
+
+ 4. Confirm
+echo "User $USERNAME created."
+echo "Home directory permissions set to $PERMISSIONS."
+echo "Location: $HOMEDIR"
+````
+
+#### Step 5: Save and exit
+
+Press:
+
+```CTRL + O, Enter, CTRL + X```
+
+#### Step 6: Make the script executable
+```sudo chmod +x add_user.sh```
+
+#### Step 7: Run the script
+
+Example:
+
+```sudo ./add_user.sh newuser```
+
+#### Step 8: Set password when prompted
+
+You'll be prompted to enter a password.
+
+#### Step 9: Verify the new user
+```id newuser```
+
+#### Step 10: Verify home directory permissions
+```ls -ld /home/newuser```
+
+
+##### You should see something like:
+
+```drwx------ 3 newuser newuser 4096 Nov 21 22:30 /home/newuser```
+
+### Script:
+ ````!/bin/bash
+
+if [ "$(id -u)" -ne 0 ]; then
+    echo "Error: This script must be run as root."
+    exit 1
+fi
+
+if [ -z "$1" ]; then
+    echo "Usage: $0 <username>"
+    exit 1
+fi
+
+USERNAME="$1"
+
+if id "$USERNAME" &>/dev/null; then
+    echo "Error: User '$USERNAME' already exists."
+    exit 1
+fi
+
+useradd -m "$USERNAME"
+
+if [ $? -ne 0 ]; then
+    echo "Failed to create user '$USERNAME'."
+    exit 1
+fi
+
+chmod 700 /home/"$USERNAME"
+
+echo "Set password for $USERNAME:"
+passwd "$USERNAME"
+
+echo "User '$USERNAME' created successfully."
+echo "Home directory: /home/$USERNAME"
+echo "Permissions set to 700 (rwx------)
+````
+### Output:
+![alt text](<Screenshot from 2025-11-21 01-18-32.png>)
+**********************************************************************
