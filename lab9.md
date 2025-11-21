@@ -238,6 +238,7 @@ If systemd service:
 
 ```
 sudo systemctl stop monitor_cpu.service
+
 ```
 ```
 ### Script:
@@ -263,9 +264,14 @@ echo "$timestamp - CPU Usage: $cpu_usage" >> "$LOGFILE"
 
 done
 ```
+<<<<<<< HEAD
+=======
+````
+>>>>>>> cb9a38058de8ec399b151843b31d53ebe4b1170d
 ### Output:
 ![alt text](<Screenshot from 2025-11-21 00-55-05.png>)
-
+```
+```
 
 ### Q4: Create a script that adds a new user and sets default permissions for their home directory.
 #### Step 1: Decide the username
