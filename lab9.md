@@ -263,11 +263,11 @@ echo "$timestamp - CPU Usage: $cpu_usage" >> "$LOGFILE"
 
 done
 ```
-```
+
 ### Output:
 ![alt text](<Screenshot from 2025-11-21 00-55-05.png>)
-```
-```
+
+
 ### Q4: Create a script that adds a new user and sets default permissions for their home directory.
 #### Step 1: Decide the username
 
@@ -293,9 +293,9 @@ Create a file called add_user.sh:
 #### Step 4: Paste the script below
 
 Paste this complete script:
-```
-````
-#!/bin/bash
+
+
+```#!/bin/bash
 
 Script to add a user and set permissions on their home directory
 
@@ -323,7 +323,7 @@ echo "User $USERNAME created."
 echo "Home directory permissions set to $PERMISSIONS."
 echo "Location: $HOMEDIR"
 ````
-````
+
 #### Step 5: Save and exit
 
 Press:
