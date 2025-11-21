@@ -263,7 +263,6 @@ echo "$timestamp - CPU Usage: $cpu_usage" >> "$LOGFILE"
 
 done
 ```
-
 ### Output:
 ![alt text](<Screenshot from 2025-11-21 00-55-05.png>)
 
