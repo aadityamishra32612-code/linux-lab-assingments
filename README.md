@@ -28,6 +28,8 @@
 
 [Experiment:11](https://github.com/aadityamishra32612-code/linux-lab-assingments/blob/main/lab11.md)
 
+[Experiment:12](https://github.com/aadityamishra32612-code/linux-lab-assingments/blob/main/lab12.md)
+
 [MID-SEM PROJECT](https://github.com/aadityamishra32612-code/linux-lab-assingments/blob/main/MidSem_project.md)
 
 
